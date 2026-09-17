@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+
+<html dir="rtl" lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جدول المحاضرات - القسم 7</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>جدول المحاضرات - القسم 7</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&amp;family=Tajawal:wght@300;400;500;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -654,292 +655,280 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header animate-fade-in">
-            <h1>📚 جدول المحاضرات - sec 7</h1>
-            <p>الجدول الأسبوعي للعام الدراسي الحالي</p>
-        </div>
-
-        <div class="table-container animate-fade-in">
-            <table>
-                <thead>
-                    <tr>
-                        <th>اليوم</th>
-                        <th>الوقت</th>
-                        <th>المادة</th>
-                        <th>القاعة/المكان</th>
-                        <th>الدكتور/المعيد</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Saturday -->
-                    <tr class="animate-fade-in day-row">
-                        <td class="day-cell" rowspan="4">السبت</td>
-                        <td class="time-cell">09:00 - 10:30</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BAS121</div>
-                                    <div class="subject-name">Physics</div>
-                                </div>
-                                <div class="subject-type">محاضرة</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Hall A-6<br>مبنى المدرجات الحكومي</td>
-                        <td class="instructor-cell">د/ طارق يوسف</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">10:40 - 12:10</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BCS102</div>
-                                    <div class="subject-name">Structured Programming</div>
-                                </div>
-                                <div class="subject-type">محاضرة</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Hall A-6<br>مبنى المدرجات الحكومي</td>
-                        <td class="instructor-cell">د/ مروة يوسف</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">12:30 - 02:00</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">GEN104</div>
-                                    <div class="subject-name">History of Science Engineering & Technology</div>
-                                </div>
-                                <div class="subject-type">محاضرة</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Hall A-6<br>مبنى المدرجات الحكومي</td>
-                        <td class="instructor-cell">د/ محمد شبل</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">02:10 - 03:40</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BAS122</div>
-                                    <div class="subject-name">Discrete Mathematics</div>
-                                </div>
-                                <div class="subject-type">محاضرة</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Hall A-6<br>مبنى المدرجات الحكومي</td>
-                        <td class="instructor-cell">د/ مي كمال</td>
-                    </tr>
-
-                    <!-- Break Row -->
-                    <tr class="break-row">
-                        <td colspan="5"></td>
-                    </tr>
-
-                    <!-- Sunday -->
-                    <tr class="animate-fade-in day-row">
-                        <td class="day-cell" rowspan="3">الأحد</td>
-                        <td class="time-cell">09:00 - 11:25</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BCS102</div>
-                                    <div class="subject-name">Structured Programming</div>
-                                </div>
-                                <div class="subject-type">معمل</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">F2 Lab1<br>F Building</td>
-                        <td class="instructor-cell">م/ محمود عصام - م/ إيمان ناصر</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">11:25 - 02:00</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BCS101</div>
-                                    <div class="subject-name">Computer Science Fundamentals</div>
-                                </div>
-                                <div class="subject-type">معمل</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">E2 Lab2<br>E Building</td>
-                        <td class="instructor-cell">م/ محمد سيد - م/ محمود السيد</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">02:10 - 03:40</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BAS122</div>
-                                    <div class="subject-name">Discrete Mathematics</div>
-                                </div>
-                                <div class="subject-type">تمرين</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">F3 C.R7<br>F Building</td>
-                        <td class="instructor-cell">م/ أحمد بدوي</td>
-                    </tr>
-
-                    <!-- Break Row -->
-                    <tr class="break-row">
-                        <td colspan="5"></td>
-                    </tr>
-
-                    <!-- Tuesday -->
-                    <tr class="animate-fade-in day-row">
-                        <td class="day-cell" rowspan="2">الثلاثاء</td>
-                        <td class="time-cell">11:25 - 01:15</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BAS120</div>
-                                    <div class="subject-name">Differential and Integral Calculus</div>
-                                </div>
-                                <div class="subject-type">تمرين</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">F3 C.R7<br>F Building</td>
-                        <td class="instructor-cell">م/ سهيلة عراقي</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">01:15 - 03:40</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BAS121</div>
-                                    <div class="subject-name">Physics</div>
-                                </div>
-                                <div class="subject-type">معمل</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Physics Lab2<br>F Building</td>
-                        <td class="instructor-cell">م/ بسمة كمال - م/ أمين نبوي</td>
-                    </tr>
-
-                    <!-- Break Row -->
-                    <tr class="break-row">
-                        <td colspan="5"></td>
-                    </tr>
-
-                    <!-- Wednesday -->
-                    <tr class="animate-fade-in day-row">
-                        <td class="day-cell" rowspan="4">الأربعاء</td>
-                        <td class="time-cell">09:00 - 10:30</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BCS101</div>
-                                    <div class="subject-name">Computer Science Fundamentals</div>
-                                </div>
-                                <div class="subject-type">محاضرة</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Hall A-6<br>مبنى المدرجات الحكومي</td>
-                        <td class="instructor-cell">د/ إسراء مصلح</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">10:40 - 12:10</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">BAS120</div>
-                                    <div class="subject-name">Differential and Integral Calculus</div>
-                                </div>
-                                <div class="subject-type">محاضرة</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Hall A-6<br>مبنى المدرجات الحكومي</td>
-                        <td class="instructor-cell">د/ إيمان منير</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">12:30 - 02:00</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">MATH</div>
-                                    <div class="subject-name">Math Zero</div>
-                                </div>
-                                <div class="subject-type">محاضرة</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Hall A-6<br>مبنى المدرجات الحكومي</td>
-                        <td class="instructor-cell">د/ فتحي عبد السالم</td>
-                    </tr>
-                    <tr class="animate-fade-in day-row">
-                        <td class="time-cell">02:10 - 03:40</td>
-                        <td class="subject-cell">
-                            <div class="checkpoint">
-                                <input type="checkbox" onchange="updateStats()">
-                            </div>
-                            <div class="subject-content">
-                                <div class="subject-header">
-                                    <div class="subject-code">MATH</div>
-                                    <div class="subject-name">Math Zero</div>
-                                </div>
-                                <div class="subject-type">تمرين</div>
-                            </div>
-                        </td>
-                        <td class="location-cell">Hall A-6<br>مبنى المدرجات الحكومي</td>
-                        <td class="instructor-cell">د/ فتحي عبد السالم</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="stats-container animate-fade-in">
-            <div class="stat-card">
-                <div class="stat-number" id="completedCount">0</div>
-                <div class="stat-label">محاضرات مكتملة</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="totalCount">13</div>
-                <div class="stat-label">إجمالي المحاضرات</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="progressPercent">0%</div>
-                <div class="stat-label">نسبة الإنجاز</div>
-            </div>
-        </div>
-    </div>
-
-    <script>
+<div class="container">
+<div class="header animate-fade-in">
+<h1>📚 جدول المحاضرات - sec 7</h1>
+<p>الجدول الأسبوعي للعام الدراسي الحالي</p>
+</div>
+<div class="table-container animate-fade-in">
+<table>
+<thead>
+<tr>
+<th>اليوم</th>
+<th>الوقت</th>
+<th>المادة</th>
+<th>القاعة/المكان</th>
+<th>الدكتور/المعيد</th>
+</tr>
+</thead>
+<tbody>
+<tr class="animate-fade-in day-row">
+<td class="day-cell" rowspan="3">السبت</td>
+<td class="time-cell">09:00 - 10:30</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BAS122</div>
+<div class="subject-name">Discrete Mathematics</div>
+</div>
+<div class="subject-type">محاضرة</div>
+</div>
+</td>
+<td class="location-cell">Hall A-5<br/>مبنى المدرجات الحكومي</td>
+<td class="instructor-cell">د/ شعبان عبد الجيد</td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="time-cell">10:40 - 12:10</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BAS120</div>
+<div class="subject-name">Differential and Integral Calculus</div>
+</div>
+<div class="subject-type">محاضرة</div>
+</div>
+</td>
+<td class="location-cell">Hall A-5<br/>مبنى المدرجات الحكومي</td>
+<td class="instructor-cell">د/ سامي عفان</td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="time-cell">12:30 - 02:00</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BAS121</div>
+<div class="subject-name">Physics</div>
+</div>
+<div class="subject-type">محاضرة</div>
+</div>
+</td>
+<td class="location-cell">Hall A-5<br/>مبنى المدرجات الحكومي</td>
+<td class="instructor-cell">أ.د/ خالد عيسوي</td>
+</tr>
+<tr class="break-row">
+<td colspan="5"></td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="day-cell" rowspan="2">الأحد</td>
+<td class="time-cell">09:00 - 10:30</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BAS122</div>
+<div class="subject-name">Discrete Mathematics</div>
+</div>
+<div class="subject-type">تمرين</div>
+</div>
+</td>
+<td class="location-cell">F3 C.R9<br/>F Building</td>
+<td class="instructor-cell">م/ محمد عادل</td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="time-cell">12:30 - 02:00</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BAS120</div>
+<div class="subject-name">Differential and Integral Calculus</div>
+</div>
+<div class="subject-type">تمرين</div>
+</div>
+</td>
+<td class="location-cell">F3 C.R9<br/>F Building</td>
+<td class="instructor-cell">م/ ابتهال محمود</td>
+</tr>
+<tr class="break-row">
+<td colspan="5"></td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="day-cell" rowspan="3">الاثنين</td>
+<td class="time-cell">09:00 - 10:30</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BCS101</div>
+<div class="subject-name">Computer Science Fundamentals</div>
+</div>
+<div class="subject-type">محاضرة</div>
+</div>
+</td>
+<td class="location-cell">Hall A-5<br/>مبنى المدرجات الحكومي</td>
+<td class="instructor-cell">أ.م.د/ إسراء مصلح</td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="time-cell">10:40 - 12:10</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BCS102</div>
+<div class="subject-name">Structured Programming</div>
+</div>
+<div class="subject-type">محاضرة</div>
+</div>
+</td>
+<td class="location-cell">Hall A-5<br/>مبنى المدرجات الحكومي</td>
+<td class="instructor-cell">د/ شيماء إبراهيم</td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="time-cell">02:10 - 03:40</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">GEN104</div>
+<div class="subject-name">History of Science Engineering &amp; Technology</div>
+</div>
+<div class="subject-type">محاضرة</div>
+</div>
+</td>
+<td class="location-cell">Online</td>
+<td class="instructor-cell">أ.م.د/ تامر عمر</td>
+</tr>
+<tr class="break-row">
+<td colspan="5"></td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="day-cell" rowspan="3">الثلاثاء</td>
+<td class="time-cell">09:00 - 10:30</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BCS102</div>
+<div class="subject-name">Structured Programming</div>
+</div>
+<div class="subject-type">معمل</div>
+</div>
+</td>
+<td class="location-cell">E2 Lab2<br/>E Building</td>
+<td class="instructor-cell">م/ عبد الرحمن خالد + م/ علي حسام</td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="time-cell">10:40 - 11:25</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BCS102</div>
+<div class="subject-name">Structured Programming</div>
+</div>
+<div class="subject-type">سكشن</div>
+</div>
+</td>
+<td class="location-cell">F3 LH2<br/>F Building</td>
+<td class="instructor-cell">م/ عبد الرحمن خالد + م/ علي حسام</td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="time-cell">11:25 - 02:00</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BAS121</div>
+<div class="subject-name">Physics</div>
+</div>
+<div class="subject-type">معمل</div>
+</div>
+</td>
+<td class="location-cell">Physics Lab1<br/>F Building</td>
+<td class="instructor-cell">م/ أمين نبوي</td>
+</tr>
+<tr class="break-row">
+<td colspan="5"></td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="day-cell" rowspan="2">الأربعاء</td>
+<td class="time-cell">02:10 - 02:55</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BCS101</div>
+<div class="subject-name">Computer Science Fundamentals</div>
+</div>
+<div class="subject-type">معمل</div>
+</div>
+</td>
+<td class="location-cell">F2 Lab2<br/>F Building</td>
+<td class="instructor-cell">م/ محمد عبد السميع + م/ محمود أبو شادي</td>
+</tr>
+<tr class="animate-fade-in day-row">
+<td class="time-cell">02:55 - 04:25</td>
+<td class="subject-cell">
+<div class="checkpoint">
+<input onchange="updateStats()" type="checkbox"/>
+</div>
+<div class="subject-content">
+<div class="subject-header">
+<div class="subject-code">BCS101</div>
+<div class="subject-name">Computer Science Fundamentals</div>
+</div>
+<div class="subject-type">سكشن</div>
+</div>
+</td>
+<td class="location-cell">F3 C.R1<br/>F Building</td>
+<td class="instructor-cell">م/ محمد عبد السميع</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="stats-container animate-fade-in">
+<div class="stat-card">
+<div class="stat-number" id="completedCount">0</div>
+<div class="stat-label">محاضرات مكتملة</div>
+</div>
+<div class="stat-card">
+<div class="stat-number" id="totalCount">13</div>
+<div class="stat-label">إجمالي المحاضرات</div>
+</div>
+<div class="stat-card">
+<div class="stat-number" id="progressPercent">0%</div>
+<div class="stat-label">نسبة الإنجاز</div>
+</div>
+</div>
+</div>
+<script>
         // Animation delays
         document.addEventListener('DOMContentLoaded', function() {
             const elements = document.querySelectorAll('.animate-fade-in');
